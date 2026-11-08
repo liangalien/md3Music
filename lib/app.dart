@@ -860,7 +860,8 @@ class _AppViewState extends State<_AppView> {
     final predictiveBack = kPredictiveBackEnabled.value;
 
     return MaterialApp(
-      title: 'MD3Music',
+      title: kTvBuild ? '音乐TV' : '音乐',
+      onGenerateTitle: (_) => kTvBuild ? '音乐TV' : '音乐',
       debugShowCheckedModeBanner: false,
       // 同时传 theme 和 darkTheme，并根据 ThemeProvider.effectiveSeedColor
       // 动态生成（支持「莫奈色」开关切换系统主色）。
