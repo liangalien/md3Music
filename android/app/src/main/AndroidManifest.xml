@@ -48,6 +48,7 @@
         <meta-data android:name="support_vivo_musicwidgetmix_logo_color" android:value="\#00FFFF\#FFFFFF" />
         <activity
             android:name=".MainActivity"
+            android:label="@string/app_name"
             android:exported="true"
             android:launchMode="singleTask"
             android:theme="@style/LaunchTheme"
